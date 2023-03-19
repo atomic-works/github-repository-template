@@ -1,11 +1,13 @@
 name: 'Enhancement Request'
 description: 'Request new work.'
-labels: ["enhancement"]
+labels: ['enhancement']
 body:
   - type: markdown
     attributes:
       value: 'Write a summary of the request. List acceptance criteria, explain how you reached this solution, and if there are alternatives.'
   - type: textarea
+    validations:
+      required: true
     attributes:
       label: 'Summary'
   - type: markdown
