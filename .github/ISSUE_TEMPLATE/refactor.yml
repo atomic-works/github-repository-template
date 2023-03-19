@@ -1,0 +1,29 @@
+name: 'Fix Request'
+description: 'Request a existing work.'
+labels: ['fix']
+body:
+  - type: markdown
+    attributes:
+      value: 'Write a summary of the problem, and how the proposed refactor alleviates it.'
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Problem'
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Solution'
+  - type: markdown
+    attributes:
+      value: 'Provide a link to the parent issue, if one exists. If there is a parent, it is an enhancement request.'
+  - type: input
+    attributes:
+      label: 'Parent Issue'
+  - type: markdown
+    attributes:
+      value: 'List all links helpful for others to understand the problem.'
+  - type: textarea
+    attributes:
+      label: 'Resource Links'
