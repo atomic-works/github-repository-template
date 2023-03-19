@@ -10,6 +10,11 @@ body:
       required: true
     attributes:
       label: 'Summary'
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: 'Acceptance Criteria'
   - type: markdown
     attributes:
       value: 'List all links helpful for others to understand your request.'
