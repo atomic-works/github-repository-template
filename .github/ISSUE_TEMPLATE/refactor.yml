@@ -1,4 +1,4 @@
-name: 'Fix Request'
+name: 'Refactor'
 description: 'Request an update to existing work.'
 labels: ['refactor']
 body:
