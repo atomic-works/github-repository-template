@@ -16,3 +16,17 @@ body:
   - type: textarea
     attributes:
       label: 'Links'
+  - type: checkboxes
+    attributes:
+      label: 'Label'
+      description: 'Please assign the proper label to describe this work by selecting it on the right. The options are: `development`, `automation`, `artifacts`, `documentation`, and `project-management`'
+      options:
+        - label: 'I have assigned a proper work label to this issue.'
+          required: true
+  - type: checkboxes
+    attributes:
+      label: 'Project'
+      description: 'Please assign this issue to a project.'
+      options:
+        - label: 'I have assigned this issue to a project.'
+          required: true
