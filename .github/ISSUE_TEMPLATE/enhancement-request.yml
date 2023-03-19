@@ -15,7 +15,7 @@ body:
       value: 'List all links helpful for others to understand your request.'
   - type: textarea
     attributes:
-      label: 'Links'
+      label: 'Resource Links'
   - type: checkboxes
     attributes:
       label: 'Label'
