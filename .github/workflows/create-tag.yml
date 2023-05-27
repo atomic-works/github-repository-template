@@ -9,13 +9,15 @@ on:
 
 jobs:
   Create-Release-Tag:
+    permissions:
+      contents: write
     if: github.event.pull_request.merged
     runs-on: ${{ vars.UBUNTU_VERSION }}
     steps:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
-        token: ${{ secrets.ACTION_CREATE_TAG_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     - name: 'Get Latest Tag'
       id: get-latest-tag
       run: |
